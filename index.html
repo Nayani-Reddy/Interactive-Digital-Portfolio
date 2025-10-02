@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>🚀 Portfolio Builder</h1>
+            <p>Create stunning portfolios tailored to your profession</p>
+        </header>
+
+        <main class="auth-container">
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form active">
+                <h2>Welcome Back</h2>
+                <form id="login">
+                    <div class="form-group">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signup-form" class="auth-form">
+                <h2>Create Account</h2>
+                <form id="signup">
+                    <div class="form-group">
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="signup-profession" required>
+                            <option value="">Select Your Field</option>
+                            <option value="tech">Tech / Programming</option>
+                            <option value="design">Design / Creative</option>
+                            <option value="academic">Academic / Research</option>
+                            <option value="business">Business / Startup</option>
+                            <option value="content">Content / Writing</option>
+                            <option value="music">Music / Arts</option>
+                            <option value="sports">Sports / Fitness</option>
+                            <option value="health">Health / Medical</option>
+                            <option value="social">Social Impact / NGO</option>
+                            <option value="others">Others / General</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </main>
+
+        <div class="features-preview">
+            <h3>Choose Your Specialized Dashboard</h3>
+            <div class="profession-grid">
+                <div class="profession-card" data-field="tech">
+                    <div class="icon">💻</div>
+                    <h4>Tech / Programming</h4>
+                    <p>Web apps, AI/ML, cybersecurity, DevOps</p>
+                </div>
+                <div class="profession-card" data-field="design">
+                    <div class="icon">🎨</div>
+                    <h4>Design / Creative</h4>
+                    <p>UI/UX, photography, animation, branding</p>
+                </div>
+                <div class="profession-card" data-field="academic">
+                    <div class="icon">🎓</div>
+                    <h4>Academic / Research</h4>
+                    <p>Papers, experiments, thesis, presentations</p>
+                </div>
+                <div class="profession-card" data-field="business">
+                    <div class="icon">💼</div>
+                    <h4>Business / Startup</h4>
+                    <p>Case studies, pitches, campaigns, strategies</p>
+                </div>
+                <div class="profession-card" data-field="content">
+                    <div class="icon">✍️</div>
+                    <h4>Content / Writing</h4>
+                    <p>Articles, blogs, copywriting, documentation</p>
+                </div>
+                <div class="profession-card" data-field="music">
+                    <div class="icon">🎵</div>
+                    <h4>Music / Arts</h4>
+                    <p>Songs, performances, compositions, galleries</p>
+                </div>
+                <div class="profession-card" data-field="sports">
+                    <div class="icon">🏅</div>
+                    <h4>Sports / Fitness</h4>
+                    <p>Highlights, stats, training, certifications</p>
+                </div>
+                <div class="profession-card" data-field="health">
+                    <div class="icon">🩺</div>
+                    <h4>Health / Medical</h4>
+                    <p>Case studies, research, campaigns, certifications</p>
+                </div>
+                <div class="profession-card" data-field="social">
+                    <div class="icon">🌍</div>
+                    <h4>Social Impact / NGO</h4>
+                    <p>Projects, campaigns, impact reports, initiatives</p>
+                </div>
+                <div class="profession-card" data-field="others">
+                    <div class="icon">✨</div>
+                    <h4>Others / General</h4>
+                    <p>Flexible, catch-all dashboard for anything unique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shared/auth.js"></script>
+</body>
+</html>
+
